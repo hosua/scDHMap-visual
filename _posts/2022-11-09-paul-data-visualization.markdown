@@ -29,6 +29,7 @@ The data has predefined root cell and three branches: two long branches and one 
 	
 	<hr>
 	<div>
+	<br>
 		<h2>Training</h2>
 		<img loading="lazy" src="/scDHMap-visual/img/paul_training.gif" class="card-img-top gifa11y-paused" alt="Paul pre-training">
 
