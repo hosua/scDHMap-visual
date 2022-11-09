@@ -1,2 +1,2 @@
 # scDHMap-website
-A representation for https://github.com/ttgump/scDHMap
+A visual representation for https://github.com/ttgump/scDHMap
