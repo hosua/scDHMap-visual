@@ -11,7 +11,7 @@ categories: article
 
 <!-- html elements can be inserted anywhere (before main, in main, after main) -->
 <!-- However, if you want any gifs with a play/pause button, they must go after <main class="container"> -->
-Paul data contains about two thousand cells profiled from murine bone marrow. 
+Paul data contains about 2000 cells profiled from murine bone marrow. 
 The authors identified 19 clusters in the data and we projected the Paul data to 2D Poincaré space by using scDHMap. 
 The data has predefined root cell and three branches: two long branches and one short trunk.
 
