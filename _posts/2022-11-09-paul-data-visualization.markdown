@@ -17,10 +17,10 @@ The data has predefined root cell and three branches: two long branches and one 
 
 ---
 <main class="container">
-	<br>
 	<div>
+	<br>
 		<h2>Pre-training</h2>
-		<img loading="lazy" src="/scDHMap-visual/img/paul_pre_training.gif" class="card-img-top gifa11y-paused" alt="Paul pre-training">
+		<img loading="lazy" src="/scDHMap-visual/img/paul_pre_training_counter.gif" class="card-img-top gifa11y-paused" alt="Paul pre-training">
 
 		<p>
 			In the pre-training stage, only the ZINB autoencoder is optimized. (400 epochs)
@@ -31,7 +31,7 @@ The data has predefined root cell and three branches: two long branches and one 
 	<div>
 	<br>
 		<h2>Training</h2>
-		<img loading="lazy" src="/scDHMap-visual/img/paul_training.gif" class="card-img-top gifa11y-paused" alt="Paul pre-training">
+		<img loading="lazy" src="/scDHMap-visual/img/paul_training_counter.gif" class="card-img-top gifa11y-paused" alt="Paul pre-training">
 
 		<p>
 			The training stage optimizes the whole model, including the hyperbolic t-SNE regularization. (529 epochs)
