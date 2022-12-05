@@ -120,9 +120,6 @@ The data has predefined root cell and three branches: two long branches and one 
 			<span class="pre dot" onclick="currentSlide(12, 'pre-slides', 'pre')"></span>
 		</div>
 	</div> <!-- slideshow-div -->
-</div>
-
----
 <div>
 <br>
 	<h2>Training</h2>
