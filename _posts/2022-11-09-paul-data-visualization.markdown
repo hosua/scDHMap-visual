@@ -15,6 +15,8 @@ Paul data contains about 2000 cells profiled from murine bone marrow.
 The authors identified 19 clusters in the data and we projected the Paul data to 2D Poincaré space by using scDHMap. 
 The data has predefined root cell and three branches: two long branches and one short trunk.
 
+<strong> Note: You can pause and play the animations in this article by clicking on them. </strong>
+
 ---
 <div>
 <br>
@@ -22,9 +24,8 @@ The data has predefined root cell and three branches: two long branches and one 
 	<canvas class="pre-training-canvas" id="pre-training-canvas">
 	</canvas>
 	<p> In the pre-training stage, only the ZINB autoencoder is optimized. <br>
-	Note: You can pause and play the gif by clicking on it.</p>
 	
-	<p> The images below are the final embeddings of different perplexity settings for pre-training. </p>
+	<p> The images below are the final embeddings of different perplexity settings. </p>
 	<div class="slideshow-div">
 		<div class="slideshow-container">
 			<div class="pre-slides fade">
@@ -126,10 +127,10 @@ The data has predefined root cell and three branches: two long branches and one 
 <br>
 	<h2>Training</h2>
 	<canvas class="training-canvas">
+
 	</canvas>
 
-	<p> The training stage optimizes the whole model, including the hyperbolic t-SNE regularization. 
-	Note: You can pause and play the gif by clicking on it.</p>
+	<p> The training stage optimizes the whole model, including the hyperbolic t-SNE regularization. </p>
 
 		<p> The images below are the final embeddings of different perplexity settings. </p>
 		<div class="slideshow-div">
