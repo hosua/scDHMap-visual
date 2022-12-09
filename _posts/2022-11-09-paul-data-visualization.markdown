@@ -33,18 +33,18 @@ The data has predefined root cell and three branches: two long branches and one 
 		<div class="range">
 			<input id="pre-slider" type="range" min="0" max="11">
 			<div class="ticks">
-				<span class="tick">2</span>
-				<span class="tick">5</span>
-				<span class="tick">10</span>
-				<span class="tick">20</span>
-				<span class="tick">30</span>
-				<span class="tick">40</span>
-				<span class="tick">50</span>
-				<span class="tick">60</span>
-				<span class="tick">70</span>
-				<span class="tick">80</span>
-				<span class="tick">90</span>
-				<span class="tick">100</span>
+				<span style="font-size:80%;" class="tick">2</span>
+				<span style="font-size:80%;" class="tick">5</span>
+				<span style="font-size:80%;" class="tick">10</span>
+				<span style="font-size:80%;" class="tick">20</span>
+				<span style="font-size:80%;" class="tick">30</span>
+				<span style="font-size:80%;" class="tick">40</span>
+				<span style="font-size:80%;" class="tick">50</span>
+				<span style="font-size:80%;" class="tick">60</span>
+				<span style="font-size:80%;" class="tick">70</span>
+				<span style="font-size:80%;" class="tick">80</span>
+				<span style="font-size:80%;" class="tick">90</span>
+				<span style="font-size:80%;" class="tick">100</span>
 			</div>
 		</div>
 		<img id="pre-img" src="/scDHMap-visual/img/pre-latent-2.jpg">
@@ -66,18 +66,18 @@ The data has predefined root cell and three branches: two long branches and one 
 		<div class="range">
 			<input id="final-slider" type="range" min="0" max="11">
 			<div class="ticks">
-				<span class="tick">2</span>
-				<span class="tick">5</span>
-				<span class="tick">10</span>
-				<span class="tick">20</span>
-				<span class="tick">30</span>
-				<span class="tick">40</span>
-				<span class="tick">50</span>
-				<span class="tick">60</span>
-				<span class="tick">70</span>
-				<span class="tick">80</span>
-				<span class="tick">90</span>
-				<span class="tick">100</span>
+				<span style="font-size:80%;" class="tick">2</span>
+				<span style="font-size:80%;" class="tick">5</span>
+				<span style="font-size:80%;" class="tick">10</span>
+				<span style="font-size:80%;" class="tick">20</span>
+				<span style="font-size:80%;" class="tick">30</span>
+				<span style="font-size:80%;" class="tick">40</span>
+				<span style="font-size:80%;" class="tick">50</span>
+				<span style="font-size:80%;" class="tick">60</span>
+				<span style="font-size:80%;" class="tick">70</span>
+				<span style="font-size:80%;" class="tick">80</span>
+				<span style="font-size:80%;" class="tick">90</span>
+				<span style="font-size:80%;" class="tick">100</span>
 			</div>
 		</div>
 		<img id="final-img" src="/scDHMap-visual/img/final-latent-2.jpg">
