@@ -25,7 +25,7 @@ pre_training
 				animator.start();
 			}
 		});
-		animator.stop();
+		// animator.stop();
 	}).catch(error => {
 		console.log("pre-training gif not working properly");
 	});
