@@ -28,7 +28,7 @@ The data has predefined root cell and three branches: two long branches and one 
 	<p> In the pre-training stage, only the ZINB autoencoder is optimized. <br>
 	
 	<p> The images below are the final embeddings of different perplexity settings. </p> <br>
-	<p class="unselectable" style="pointer-events:none; position:absolute; left:37%;"> Perplexity</p>
+	<!-- <p class="unselectable" style="pointer-events:none; position:absolute; left:37%;"> Perplexity</p> -->
 	<div id="pre-slider-div" style="width:75%">
 		<div class="range">
 			<input id="pre-slider" type="range" min="0" max="11">
@@ -61,7 +61,7 @@ The data has predefined root cell and three branches: two long branches and one 
 	<p> The training stage optimizes the whole model, including the hyperbolic t-SNE regularization. </p>
 
 	<p> The images below are the final embeddings of different perplexity settings. </p> <br>
-	<p class="unselectable" style="pointer-events:none; position:absolute; left:37%;"> Perplexity</p>
+	<!-- <p class="unselectable" style="pointer-events:none; position:absolute; left:37%;"> Perplexity</p> -->
 	<div id="final-slider-div" style="width:75%">
 		<div class="range">
 			<input id="final-slider" type="range" min="0" max="11">
