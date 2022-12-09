@@ -21,106 +21,37 @@ The data has predefined root cell and three branches: two long branches and one 
 <div>
 <br>
 	<h2>Pre-training</h2>
-	<canvas class="pre-training-canvas" id="pre-training-canvas">
-	</canvas>
+	<div class="gif-container">
+		<canvas class="pre-training-canvas" id="pre-training-canvas"> </canvas>
+		<div id="pause-btn" class="pause-btn"></div>
+	</div>
 	<p> In the pre-training stage, only the ZINB autoencoder is optimized. <br>
 	
-	<p> The images below are the final embeddings of different perplexity settings. </p>
-	<div class="slideshow-div">
-		<div class="slideshow-container">
-			<div class="pre-slides fade">
-				<div class="numbertext">1 / 12</div>
-				<img src="/scDHMap-visual/img/pre-latent-2.jpg" style="width:100%">
-				<div class="text">Perplexity = 2</div>
+	<p> The images below are the final embeddings of different perplexity settings. </p> <br>
+	<p class="unselectable" style="pointer-events:none; position:absolute; left:37%;"> Perplexity</p>
+	<div id="pre-slider-div" style="width:75%">
+		<div class="range">
+			<input id="pre-slider" type="range" min="0" max="11">
+			<div class="ticks">
+				<span class="tick">2</span>
+				<span class="tick">5</span>
+				<span class="tick">10</span>
+				<span class="tick">20</span>
+				<span class="tick">30</span>
+				<span class="tick">40</span>
+				<span class="tick">50</span>
+				<span class="tick">60</span>
+				<span class="tick">70</span>
+				<span class="tick">80</span>
+				<span class="tick">90</span>
+				<span class="tick">100</span>
 			</div>
-
-			<div class="pre-slides fade">
-				<div class="numbertext">2 / 12</div>
-				<img src="/scDHMap-visual/img/pre-latent-5.jpg" style="width:100%">
-				<div class="text">Perplexity = 5</div>
-			</div>
-
-			<div class="pre-slides fade">
-				<div class="numbertext">3 / 12</div>
-				<img src="/scDHMap-visual/img/pre-latent-10.jpg" style="width:100%">
-				<div class="text">Perplexity = 10</div>
-			</div>
-
-			<div class="pre-slides fade">
-				<div class="numbertext">4 / 12</div>
-				<img src="/scDHMap-visual/img/pre-latent-20.jpg" style="width:100%">
-				<div class="text">Perplexity = 20</div>
-			</div>
-
-			<div class="pre-slides fade">
-				<div class="numbertext">5 / 12</div>
-				<img src="/scDHMap-visual/img/pre-latent-30.jpg" style="width:100%">
-				<div class="text">Perplexity = 30</div>
-			</div>
-
-			<div class="pre-slides fade">
-				<div class="numbertext">6 / 12</div>
-				<img src="/scDHMap-visual/img/pre-latent-40.jpg" style="width:100%">
-				<div class="text">Perplexity = 40</div>
-			</div>
-
-			<div class="pre-slides fade">
-				<div class="numbertext">7 / 12</div>
-				<img src="/scDHMap-visual/img/pre-latent-50.jpg" style="width:100%">
-				<div class="text">Perplexity = 50</div>
-			</div>
-
-			<div class="pre-slides fade">
-				<div class="numbertext">8 / 12</div>
-				<img src="/scDHMap-visual/img/pre-latent-60.jpg" style="width:100%">
-				<div class="text">Perplexity = 60</div>
-			</div>
-
-			<div class="pre-slides fade">
-				<div class="numbertext">9 / 12</div>
-				<img src="/scDHMap-visual/img/pre-latent-70.jpg" style="width:100%">
-				<div class="text">Perplexity = 70</div>
-			</div>
-
-			<div class="pre-slides fade">
-				<div class="numbertext">10 / 12</div>
-				<img src="/scDHMap-visual/img/pre-latent-80.jpg" style="width:100%">
-				<div class="text">Perplexity = 80</div>
-			</div>
-
-			<div class="pre-slides fade">
-				<div class="numbertext">11 / 12</div>
-				<img src="/scDHMap-visual/img/pre-latent-90.jpg" style="width:100%">
-				<div class="text">Perplexity = 90</div>
-			</div>
-
-			<div class="pre-slides fade">
-				<div class="numbertext">12 / 12</div>
-				<img src="/scDHMap-visual/img/pre-latent-100.jpg" style="width:100%">
-				<div class="text">Perplexity = 100</div>
-			</div>
-
-			<a class="prev" onclick="plusSlides(-1, 'pre-slides', 'pre')">&#10094;</a>
-			<a class="next" onclick="plusSlides(1, 'pre-slides', 'pre')">&#10095;</a>
 		</div>
-		<br>
-
-		<div style="text-align: center">
-			<span class="pre dot" onclick="currentSlide(1 , 'pre-slides', 'pre')"></span>
-			<span class="pre dot" onclick="currentSlide(2 , 'pre-slides', 'pre')"></span>
-			<span class="pre dot" onclick="currentSlide(3 , 'pre-slides', 'pre')"></span>
-			<span class="pre dot" onclick="currentSlide(4 , 'pre-slides', 'pre')"></span>
-			<span class="pre dot" onclick="currentSlide(5 , 'pre-slides', 'pre')"></span>
-			<span class="pre dot" onclick="currentSlide(6 , 'pre-slides', 'pre')"></span>
-			<span class="pre dot" onclick="currentSlide(7 , 'pre-slides', 'pre')"></span>
-			<span class="pre dot" onclick="currentSlide(8 , 'pre-slides', 'pre')"></span>
-			<span class="pre dot" onclick="currentSlide(9 , 'pre-slides', 'pre')"></span>
-			<span class="pre dot" onclick="currentSlide(10, 'pre-slides', 'pre')"></span>
-			<span class="pre dot" onclick="currentSlide(11, 'pre-slides', 'pre')"></span>
-			<span class="pre dot" onclick="currentSlide(12, 'pre-slides', 'pre')"></span>
-		</div>
-	</div> <!-- slideshow-div -->
+		<img id="pre-img" src="/scDHMap-visual/img/pre-latent-2.jpg">
+	</div> <!-- end pre-slider div -->
 <div>
+<br>
+<hr>
 <br>
 	<h2>Training</h2>
 	<canvas class="training-canvas">
@@ -129,111 +60,57 @@ The data has predefined root cell and three branches: two long branches and one 
 
 	<p> The training stage optimizes the whole model, including the hyperbolic t-SNE regularization. </p>
 
-		<p> The images below are the final embeddings of different perplexity settings. </p>
-		<div class="slideshow-div">
-			<div class="slideshow-container">
-				<div class="final-slides fade">
-					<div class="numbertext">1 / 12</div>
-					<img src="/scDHMap-visual/img/final-latent-2.jpg" style="width:100%">
-					<div class="text">Perplexity = 2</div>
-				</div>
-
-				<div class="final-slides fade">
-					<div class="numbertext">2 / 12</div>
-					<img src="/scDHMap-visual/img/final-latent-5.jpg" style="width:100%">
-					<div class="text">Perplexity = 5</div>
-				</div>
-
-				<div class="final-slides fade">
-					<div class="numbertext">3 / 12</div>
-					<img src="/scDHMap-visual/img/final-latent-10.jpg" style="width:100%">
-					<div class="text">Perplexity = 10</div>
-				</div>
-
-				<div class="final-slides fade">
-					<div class="numbertext">4 / 12</div>
-					<img src="/scDHMap-visual/img/final-latent-20.jpg" style="width:100%">
-					<div class="text">Perplexity = 20</div>
-				</div>
-
-				<div class="final-slides fade">
-					<div class="numbertext">5 / 12</div>
-					<img src="/scDHMap-visual/img/final-latent-30.jpg" style="width:100%">
-					<div class="text">Perplexity = 30</div>
-				</div>
-
-				<div class="final-slides fade">
-					<div class="numbertext">6 / 12</div>
-					<img src="/scDHMap-visual/img/final-latent-40.jpg" style="width:100%">
-					<div class="text">Perplexity = 40</div>
-				</div>
-
-				<div class="final-slides fade">
-					<div class="numbertext">7 / 12</div>
-					<img src="/scDHMap-visual/img/final-latent-50.jpg" style="width:100%">
-					<div class="text">Perplexity = 50</div>
-				</div>
-
-				<div class="final-slides fade">
-					<div class="numbertext">8 / 12</div>
-					<img src="/scDHMap-visual/img/final-latent-60.jpg" style="width:100%">
-					<div class="text">Perplexity = 60</div>
-				</div>
-
-				<div class="final-slides fade">
-					<div class="numbertext">9 / 12</div>
-					<img src="/scDHMap-visual/img/final-latent-70.jpg" style="width:100%">
-					<div class="text">Perplexity = 70</div>
-				</div>
-
-				<div class="final-slides fade">
-					<div class="numbertext">10 / 12</div>
-					<img src="/scDHMap-visual/img/final-latent-80.jpg" style="width:100%">
-					<div class="text">Perplexity = 80</div>
-				</div>
-
-				<div class="final-slides fade">
-					<div class="numbertext">11 / 12</div>
-					<img src="/scDHMap-visual/img/final-latent-90.jpg" style="width:100%">
-					<div class="text">Perplexity = 90</div>
-				</div>
-
-				<div class="final-slides fade">
-					<div class="numbertext">12 / 12</div>
-					<img src="/scDHMap-visual/img/final-latent-100.jpg" style="width:100%">
-					<div class="text">Perplexity = 100</div>
-				</div>
-
-				<a class="prev" onclick="plusSlides(-1, 'final-slides', 'final')">&#10094;</a>
-				<a class="next" onclick="plusSlides(1, 'final-slides', 'final')">&#10095;</a>
+	<p> The images below are the final embeddings of different perplexity settings. </p> <br>
+	<p class="unselectable" style="pointer-events:none; position:absolute; left:37%;"> Perplexity</p>
+	<div id="final-slider-div" style="width:75%">
+		<div class="range">
+			<input id="final-slider" type="range" min="0" max="11">
+			<div class="ticks">
+				<span class="tick">2</span>
+				<span class="tick">5</span>
+				<span class="tick">10</span>
+				<span class="tick">20</span>
+				<span class="tick">30</span>
+				<span class="tick">40</span>
+				<span class="tick">50</span>
+				<span class="tick">60</span>
+				<span class="tick">70</span>
+				<span class="tick">80</span>
+				<span class="tick">90</span>
+				<span class="tick">100</span>
 			</div>
-			<br>
-
-			<div style="text-align: center">
-				<span class="final dot" onclick="currentSlide(1 , 'final-slides', 'final')"></span>
-				<span class="final dot" onclick="currentSlide(2 , 'final-slides', 'final')"></span>
-				<span class="final dot" onclick="currentSlide(3 , 'final-slides', 'final')"></span>
-				<span class="final dot" onclick="currentSlide(4 , 'final-slides', 'final')"></span>
-				<span class="final dot" onclick="currentSlide(5 , 'final-slides', 'final')"></span>
-				<span class="final dot" onclick="currentSlide(6 , 'final-slides', 'final')"></span>
-				<span class="final dot" onclick="currentSlide(7 , 'final-slides', 'final')"></span>
-				<span class="final dot" onclick="currentSlide(8 , 'final-slides', 'final')"></span>
-				<span class="final dot" onclick="currentSlide(9 , 'final-slides', 'final')"></span>
-				<span class="final dot" onclick="currentSlide(10, 'final-slides', 'final')"></span>
-				<span class="final dot" onclick="currentSlide(11, 'final-slides', 'final')"></span>
-				<span class="final dot" onclick="currentSlide(12, 'final-slides', 'final')"></span>
-			</div>
-		</div> <!-- slideshow-div -->
-	</div>
+		</div>
+		<img id="final-img" src="/scDHMap-visual/img/final-latent-2.jpg">
+	</div> <!-- end final-slider div -->
 
 <style>
 	
 </style>
-
-<!-- <script type="text/javascript" src="/scDHMap-visual/gifa11y.min.js"></script> -->
-<link rel="stylesheet" type="text/css" href="/scDHMap-visual/slideshow-styles.css">
+<link rel="stylesheet" type="text/css" href="/scDHMap-visual/slider.css">
 <script type="text/javascript" src="/scDHMap-visual/slideshow.js"></script>
-<script type="text/javascript" src="/scDHMap-visual/gifler.min.js"></script>
+<script type="text/javascript" src="/scDHMap-visual/gifler.js"></script>
 <script type="text/javascript" src="/scDHMap-visual/run-gifler.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	var valMap = new Map([
+		[0, 2], [1, 5], [2, 10], [3, 20], [4, 30],
+		[5, 40], [6, 50], [7, 60], [8, 70], [9, 80], 
+		[10, 90], [11, 100]
+	]);
+	$("#pre-slider").on("change", function(e){
+		let key = parseInt($(this).val());
+		let val = valMap.get(key);
+		console.log(`${key} : ${val}`);
+		$("#pre-img").attr("src", `/scDHMap-visual/img/pre-latent-${val}.jpg`);
+	});
+
+	$("#final-slider").on("change", function(e){
+		let key = parseInt($(this).val());
+		let val = valMap.get(key);
+		console.log(`${key} : ${val}`);
+		$("#final-img").attr("src", `/scDHMap-visual/img/final-latent-${val}.jpg`);
+	});
+</script>
+
+
 
