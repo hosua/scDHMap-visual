@@ -18,7 +18,7 @@ The data has predefined root cell and three branches: two long branches and one 
 
 ---
 
-<strong> Note: </strong> You can pause and play the animation by clicking on it.
+<strong> Note: </strong> You can pause and play the animations by clicking on them.
 <div>
 <br>
 	<h2>Pre-training</h2>
@@ -58,7 +58,7 @@ The data has predefined root cell and three branches: two long branches and one 
 				<span style="font-size:80%;" class="tick">100</span>
 			</div>
 		</div>
-		<img id="final-img" src="/scDHMap-visual/img/final-latent-2.jpg">
+		<img id="final-img" src="/scDHMap-visual/img/final-latent-50.jpg">
 	</div> <!-- end final-slider div -->
 
 <style>
