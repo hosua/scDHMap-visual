@@ -1,6 +1,6 @@
 let slideIndex = 1;
-showSlides(slideIndex, "pre-slides", "pre");
-showSlides(slideIndex, "final-slides", "final");
+showSlides(slideIndex, "pre-slider", "pre");
+showSlides(slideIndex, "final-slider", "final");
 
 // Next/previous controls
 function plusSlides(n, slide_class, dot_class) {

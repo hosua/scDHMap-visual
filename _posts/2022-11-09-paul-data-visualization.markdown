@@ -15,9 +15,10 @@ Paul data contains about 2000 cells profiled from murine bone marrow.
 The authors identified 19 clusters in the data and we projected the Paul data to 2D Poincaré space by using scDHMap. 
 The data has predefined root cell and three branches: two long branches and one short trunk.
 
-<strong> Note: You can pause and play the animations in this article by clicking on them. </strong>
 
 ---
+
+<strong> Note: </strong> You can pause and play the animation by clicking on it.
 <div>
 <br>
 	<h2>Pre-training</h2>
@@ -26,35 +27,12 @@ The data has predefined root cell and three branches: two long branches and one 
 		<div id="pause-btn" class="pause-btn"></div>
 	</div>
 	<p> In the pre-training stage, only the ZINB autoencoder is optimized. <br>
-	
-	<p> The images below are the final embeddings of different perplexity settings. </p> <br>
-	<!-- <p class="unselectable" style="pointer-events:none; position:absolute; left:37%;"> Perplexity</p> -->
-	<div id="pre-slider-div" style="width:75%">
-		<div class="range">
-			<input id="pre-slider" type="range" min="0" max="11">
-			<div class="ticks">
-				<span style="font-size:80%;" class="tick">2</span>
-				<span style="font-size:80%;" class="tick">5</span>
-				<span style="font-size:80%;" class="tick">10</span>
-				<span style="font-size:80%;" class="tick">20</span>
-				<span style="font-size:80%;" class="tick">30</span>
-				<span style="font-size:80%;" class="tick">40</span>
-				<span style="font-size:80%;" class="tick">50</span>
-				<span style="font-size:80%;" class="tick">60</span>
-				<span style="font-size:80%;" class="tick">70</span>
-				<span style="font-size:80%;" class="tick">80</span>
-				<span style="font-size:80%;" class="tick">90</span>
-				<span style="font-size:80%;" class="tick">100</span>
-			</div>
-		</div>
-		<img id="pre-img" src="/scDHMap-visual/img/pre-latent-2.jpg">
-	</div> <!-- end pre-slider div -->
 <div>
 <br>
 <hr>
 <br>
 	<h2>Training</h2>
-	<canvas class="training-canvas">
+	<canvas class="training-canvas" id="training-canvas">
 
 	</canvas>
 
