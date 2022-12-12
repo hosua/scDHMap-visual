@@ -37,8 +37,14 @@ The data has predefined root cell and three branches: two long branches and one 
 	</canvas>
 
 	<p> The training stage optimizes the whole model, including the hyperbolic t-SNE regularization. </p>
+	
+	<br>
+	<hr>
+	<br>
+	<h2> Perplexity </h2>
 
-	<p> The images below are the final embeddings of different perplexity settings. </p> <br>
+	<p> The pictures below are visualizations of the effects from using different perplexity settings. </p>
+
 	<!-- <p class="unselectable" style="pointer-events:none; position:absolute; left:37%;"> Perplexity</p> -->
 	<div id="final-slider-div" style="width:75%">
 		<div class="range">
@@ -60,9 +66,14 @@ The data has predefined root cell and three branches: two long branches and one 
 		</div>
 		<img id="final-img" src="/scDHMap-visual/img/final-latent-50.jpg">
 	</div> <!-- end final-slider div -->
-	
+
 	<br>
-	<p> The images below are the final embeddings of different gamma settings. </p> <br>
+	<p> The perplexity parameter controls how many neighbors are included in the t-SNE regularization. </p>	
+	<br>
+	<hr>
+	<br>
+	<h2> Gamma </h2>
+	<p> The pictures below are visualizations of the effects from using different gamma settings. </p>
 	<div id="gamma-slider-div" style="width:75%">
 		<div class="range">
 			<input id="gamma-slider" type="range" min="0" max="8">
@@ -80,6 +91,9 @@ The data has predefined root cell and three branches: two long branches and one 
 		</div>
 		<img id="gamma-img" src="/scDHMap-visual/img/gamma-latent-1.jpg">
 	</div> <!-- end gamma-slider div -->
+
+	<br>
+	<p> The gamma parameter is the coefficient of the Cauchy kernel. It controls the strength of the repulsion between two dissimilar bonds. </p>
 
 <style>
 	
