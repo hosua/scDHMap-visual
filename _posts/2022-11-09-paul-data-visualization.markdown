@@ -60,6 +60,26 @@ The data has predefined root cell and three branches: two long branches and one 
 		</div>
 		<img id="final-img" src="/scDHMap-visual/img/final-latent-50.jpg">
 	</div> <!-- end final-slider div -->
+	
+	<br>
+	<p> The images below are the final embeddings of different gamma settings. </p> <br>
+	<div id="gamma-slider-div" style="width:75%">
+		<div class="range">
+			<input id="gamma-slider" type="range" min="0" max="8">
+			<div class="ticks">
+				<span style="font-size:80%;" class="tick">0.01</span>
+				<span style="font-size:80%;" class="tick">0.05</span>
+				<span style="font-size:80%;" class="tick">0.10</span>
+				<span style="font-size:80%;" class="tick">0.50</span>
+				<span style="font-size:80%;" class="tick">1	</span>
+				<span style="font-size:80%;" class="tick">5</span>
+				<span style="font-size:80%;" class="tick">10</span>
+				<span style="font-size:80%;" class="tick">50</span>
+				<span style="font-size:80%;" class="tick">100</span>
+			</div>
+		</div>
+		<img id="gamma-img" src="/scDHMap-visual/img/gamma-latent-1.jpg">
+	</div> <!-- end gamma-slider div -->
 
 <style>
 	
@@ -70,24 +90,32 @@ The data has predefined root cell and three branches: two long branches and one 
 <script type="text/javascript" src="/scDHMap-visual/run-gifler.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-	var valMap = new Map([
+	var perpMap = new Map([
 		[0, 2], [1, 5], [2, 10], [3, 20], [4, 30],
 		[5, 40], [6, 50], [7, 60], [8, 70], [9, 80], 
 		[10, 90], [11, 100]
 	]);
-	$("#pre-slider").on("change", function(e){
-		let key = parseInt($(this).val());
-		let val = valMap.get(key);
-		console.log(`${key} : ${val}`);
-		$("#pre-img").attr("src", `/scDHMap-visual/img/pre-latent-${val}.jpg`);
-	});
+
+	var gammaMap = new Map([
+		[0, 0.01], [1, 0.05], [2, 0.10], [3, 0.50], 
+		[4, 1], [5, 5], [6, 10], [7, 50], [8, 100]
+	]);
+
 
 	$("#final-slider").on("change", function(e){
 		let key = parseInt($(this).val());
-		let val = valMap.get(key);
+		let val = perpMap.get(key);
 		console.log(`${key} : ${val}`);
 		$("#final-img").attr("src", `/scDHMap-visual/img/final-latent-${val}.jpg`);
 	});
+
+	$("#gamma-slider").on("change", function(e){
+		let key = parseInt($(this).val());
+		let val = gammaMap.get(key);
+		console.log(`${key} : ${val}`);
+		$("#gamma-img").attr("src", `/scDHMap-visual/img/gamma-latent-${val}.jpg`);
+	});
+
 </script>
 
 
