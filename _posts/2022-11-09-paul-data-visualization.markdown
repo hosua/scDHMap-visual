@@ -76,15 +76,19 @@ The data has predefined root cell and three branches: two long branches and one 
 	<p> The pictures below are visualizations of the effects from using different gamma settings. </p>
 	<div id="gamma-slider-div" style="width:75%">
 		<div class="range">
-			<input id="gamma-slider" type="range" min="0" max="8">
+			<input id="gamma-slider" type="range" min="0" max="12">
 			<div class="ticks">
 				<span style="font-size:80%;" class="tick">0.01</span>
 				<span style="font-size:80%;" class="tick">0.05</span>
 				<span style="font-size:80%;" class="tick">0.10</span>
 				<span style="font-size:80%;" class="tick">0.50</span>
 				<span style="font-size:80%;" class="tick">1	</span>
+				<span style="font-size:80%;" class="tick">2	</span>
 				<span style="font-size:80%;" class="tick">5</span>
 				<span style="font-size:80%;" class="tick">10</span>
+				<span style="font-size:80%;" class="tick">15</span>
+				<span style="font-size:80%;" class="tick">20</span>
+				<span style="font-size:80%;" class="tick">25</span>
 				<span style="font-size:80%;" class="tick">50</span>
 				<span style="font-size:80%;" class="tick">100</span>
 			</div>
@@ -99,7 +103,6 @@ The data has predefined root cell and three branches: two long branches and one 
 	
 </style>
 <link rel="stylesheet" type="text/css" href="/scDHMap-visual/slider.css">
-<script type="text/javascript" src="/scDHMap-visual/slideshow.js"></script>
 <script type="text/javascript" src="/scDHMap-visual/gifler.js"></script>
 <script type="text/javascript" src="/scDHMap-visual/run-gifler.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -112,7 +115,8 @@ The data has predefined root cell and three branches: two long branches and one 
 
 	var gammaMap = new Map([
 		[0, 0.01], [1, 0.05], [2, 0.10], [3, 0.50], 
-		[4, 1], [5, 5], [6, 10], [7, 50], [8, 100]
+		[4, 1], [5, 2], [6, 5], [7, 10], [8, 15], [9, 20],
+		[10, 25], [11, 50], [12, 100]
 	]);
 
 
