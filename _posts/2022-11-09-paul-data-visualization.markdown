@@ -76,7 +76,7 @@ The data has predefined root cell and three branches: two long branches and one 
 	<p> The pictures below are visualizations of the effects from using different gamma settings. </p>
 	<div id="gamma-slider-div" style="width:75%">
 		<div class="range">
-			<input id="gamma-slider" type="range" min="0" max="11">
+			<input id="gamma-slider" type="range" min="0" max="10">
 			<div class="ticks">
 				<span style="font-size:80%;" class="tick">0.01</span>
 				<span style="font-size:80%;" class="tick">0.05</span>
@@ -89,7 +89,6 @@ The data has predefined root cell and three branches: two long branches and one 
 				<span style="font-size:80%;" class="tick">15</span>
 				<span style="font-size:80%;" class="tick">20</span>
 				<span style="font-size:80%;" class="tick">25</span>
-				<span style="font-size:80%;" class="tick">30</span>
 			</div>
 		</div>
 		<img id="gamma-img" src="/scDHMap-visual/img/gamma-latent-1.jpg">
@@ -115,7 +114,7 @@ The data has predefined root cell and three branches: two long branches and one 
 	var gammaMap = new Map([
 		[0, 0.01], [1, 0.05], [2, 0.10], [3, 0.50], 
 		[4, 1], [5, 2], [6, 5], [7, 10], [8, 15], [9, 20],
-		[10, 25], [11, 30]
+		[10, 25]
 	]);
 
 
